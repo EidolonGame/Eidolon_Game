@@ -29,6 +29,7 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\PText</font>
+    <font>fonts\Clock</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_tile</object>
@@ -40,6 +41,7 @@
     <object>objects\obj_player</object>
     <object>objects\obj_faction</object>
     <object>objects\obj_fleet</object>
+    <object>objects\obj_HUD</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_test_room</room>

@@ -56,7 +56,7 @@
     <instance objName="obj_empty_tile" x="96" y="0" name="inst_91F49479" locked="0" code="name = &quot;Cepheus IV&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_empty_tile" x="192" y="64" name="inst_9966E3E9" locked="0" code="name = &quot;Telor&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_empty_tile" x="96" y="128" name="inst_3261A767" locked="0" code="name = &quot;A'lasia&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_empty_tile" x="192" y="192" name="inst_8BB629BE" locked="0" code="name = &quot;Gamma II&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_empty_tile" x="192" y="192" name="inst_8BB629BE" locked="0" code="name = &quot;Gamma II&quot;&#xA;owner = sith&#xA;resources[0] = 100;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_empty_tile" x="288" y="128" name="inst_7E340764" locked="0" code="name = &quot;Terra#Prime&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_empty_tile" x="288" y="0" name="inst_69A88B70" locked="0" code="name = &quot;Altes#Machina&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_empty_tile" x="96" y="256" name="inst_6D6B8CAD" locked="0" code="name = &quot;Eridon III&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -76,6 +76,8 @@
     <instance objName="obj_empty_tile" x="480" y="128" name="inst_A64E4DC2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_empty_tile" x="480" y="0" name="inst_6D91DB9F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player" x="640" y="448" name="inst_7BF1774A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_HUD" x="32" y="32" name="inst_87BBFA25" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_faction" x="544" y="416" name="sith" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

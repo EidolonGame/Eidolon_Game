@@ -43,7 +43,7 @@ visibleName = 0
 
 //Population and Resources
 pop = 0;
-for (i = 0; i &lt; 3; i++) {
+for (i = 0; i &lt; 7; i++) {
     resources[i] = 0;
 }
 
@@ -74,7 +74,23 @@ fleets[1] = noone
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>// Resources will be depleted by a unit of 3 every 5 seconds
+deplrate = 5;
+depletion = 3;
+if (global.seconds % deplrate == 0 &amp;&amp; owner != -1) {
+    for (i = 0; i &lt; 7; i++) {
+        if (resources[i] &lt; depletion) {
+            owner.stockpile[i] += resources[i];
+            resources[i] = 0;
+        }
+        else {
+            resources[i] -= depletion;
+            owner.stockpile[i] += depletion;
+        }
+    }
+    show_debug_message("Stockpile 0: " + string(owner.stockpile[0]))
+}
+</string>
           </argument>
         </arguments>
       </action>
