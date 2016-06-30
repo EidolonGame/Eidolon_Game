@@ -51,7 +51,7 @@ for (i = 0; i &lt; 7; i++) {
 //tile
 fleets[0] = noone
 fleets[1] = noone
-
+lastsecond = 0
 </string>
           </argument>
         </arguments>
@@ -77,7 +77,8 @@ fleets[1] = noone
             <string>// Resources will be depleted by a unit of 3 every 5 seconds
 deplrate = 5;
 depletion = 3;
-if (global.seconds % deplrate == 0 &amp;&amp; owner != -1) {
+if (floor(global.seconds) != lastsecond &amp;&amp; floor(global.seconds) % deplrate == 0 &amp;&amp; owner != -1) {
+    lastsecond = floor(global.seconds);
     for (i = 0; i &lt; 7; i++) {
         if (resources[i] &lt; depletion) {
             owner.stockpile[i] += resources[i];
