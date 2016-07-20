@@ -44,7 +44,7 @@ visibleName = 0
 //Population and Resources
 pop = 0;
 for (i = 0; i &lt; 7; i++) {
-    resources[i] = 0;
+    resources[i] = 100;
 }
 
 //Array used to keep track of ships on tile, two because two factions ships can be on same
